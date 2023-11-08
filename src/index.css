@@ -12,6 +12,7 @@
 
 body {
   min-height: 100vh;
+  background-color: rgb(249, 244, 238);
 }
 
 img, picture, svg, video {
