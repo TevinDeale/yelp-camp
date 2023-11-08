@@ -1,0 +1,65 @@
+.logo {
+    padding-left: 1rem;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.main-container {
+    padding: 1rem;
+}
+
+#motto {
+    padding-top: 2rem;
+}
+
+#description {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    line-height: 1.5rem;
+}
+
+h4 {
+    font-weight: 400;
+    color: gray;
+    font-size: 1.2rem;
+}
+
+.actions-list {
+    padding-bottom: 1.4rem;
+}
+
+.actions {
+    list-style: none;
+    background-image: url(../../Assets/Checkmark.svg);
+    background-repeat: no-repeat;
+    background-position: 0, 2px;
+    padding-left: 2rem;
+    line-height: 2.5rem;
+}
+
+.view-campgrounds {
+    font-size: 1.1rem;
+    font-weight: 600;
+    letter-spacing: .05rem;
+    background-color: black;
+    color: white;
+    padding: 1.3rem;
+    border-radius: 5px;
+}
+
+.partners {
+    padding-top: 2.5rem;
+}
+
+.partners h4 {
+    color: rgb(95, 95, 95);
+    padding-bottom: .7rem;
+}
+
+.partners ul {
+    display: flex;
+}
+
+.partners li {
+    list-style: none;
+}
