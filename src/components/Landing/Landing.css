@@ -70,3 +70,35 @@ h4 {
     list-style: none;
 }
 
+@media (min-width: 820px) {
+    #motto {
+        font-size: 4rem;
+    }
+
+    h4 {
+        font-size: 1.5rem;
+    }
+
+    #description {
+        line-height: 2rem;
+    }
+
+    .actions {
+        line-height: 3rem;
+    }
+
+    .view-campgrounds {
+        font-size: 1.5rem;
+    }
+
+    .partners li:nth-child(n + 2) {
+        padding-left: 3rem;
+    }
+
+}
+
+@media (min-width: 1024px) {
+    #motto {
+        color: red;
+    }
+}
