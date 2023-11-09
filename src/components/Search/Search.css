@@ -62,3 +62,27 @@
         width: 98%;
     }
 }
+
+.search-main-container {
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 2rem;
+    padding: 2rem;
+    background-color: white;
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+}
+
+.search-main-container h1 {
+    padding-bottom: 1rem;
+}
+
+.search-main-container h4 {
+    line-height: 1.7rem;
+    padding-bottom: 1rem;
+}
+
+.search-main-container input {
+    border: 1px solid rgb(190, 190, 190);
+    border-radius: 5px;
+}
