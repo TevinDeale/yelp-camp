@@ -1,7 +1,6 @@
 import "./Search.css";
 import onay from '../../Assets/Camp Images/Compressed Images/Onay Beach.jpg';
 import Navbar from "../Static/Navbar";
-import searchIcon from '../../Assets/Search Icon.svg'
 
 const campsites = {
     image: onay,
@@ -36,7 +35,7 @@ const Search = () => {
             <h4>View our hand-picked campgrounds from all over the world, or add your own.</h4>
             <form>
                 <input type="text" placeholder="Search for camps"></input>
-                <img id='search-icon' src={searchIcon} />
+                
                 <br />
                 <button>Search</button>
                 <h4>Or add your own campground</h4>
