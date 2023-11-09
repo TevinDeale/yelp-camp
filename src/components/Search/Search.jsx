@@ -1,6 +1,7 @@
 import "./Search.css";
 import onay from '../../Assets/Camp Images/Compressed Images/Onay Beach.jpg';
 import Navbar from "../Static/Navbar";
+import Footer from "../Static/Footer";
 
 const campsites = {
     image: onay,
@@ -33,12 +34,12 @@ const Search = () => {
         <main className="search-main-container">
             <h1>Welcome to YelpCamp!</h1>
             <h4>View our hand-picked campgrounds from all over the world, or add your own.</h4>
-            <form>
+            <form onSubmit={(e) => e.preventDefault()}>
                 <input type="text" placeholder="Search for camps"></input>
                 
                 <br />
                 <button>Search</button>
-                <h4>Or add your own campground</h4>
+                <h4 id='add-campground'>Or add your own campground</h4>
             </form>
         </main>
         <div className="search-container">
@@ -50,7 +51,10 @@ const Search = () => {
             <Card />
             <Card />
             <Card />
+            <Card />
         </div>
+
+        <Footer />
     </>
     )
 }
