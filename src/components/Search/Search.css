@@ -135,15 +135,45 @@
     .search-container {
         display: grid;
         grid-template-columns: 50% 50%;
-        border: 2px solid red;
+
     }
 
     .card-container:nth-child(odd) {
         margin-right: 1rem;
     }
 
-    .card-container:nth-child(even) {
-        margin-right: 1rem;
+    .search-page-container {
+        margin-left: 2rem;
+        margin-right: 2rem;
     }
 
+}
+
+@media (min-width: 1024px) {
+    .search-container {
+        grid-template-columns: repeat(3, 33.33%);
+    }
+
+    .search-page-container {
+        margin-left: 7rem;
+        margin-right: 7rem;
+    }
+
+    .card-container:nth-child(n + 0) {
+        margin: 0;
+        margin-bottom: 1rem;
+    }
+   
+    .card-container:nth-child(3n+3) {
+        margin-left: .5rem;
+    }
+
+    .card-container:nth-child(3n + 1) {
+        margin-right: .5rem;
+    }
+
+    .card-container:nth-child(3n + 2) {
+        margin-right: .5rem;
+        margin-left: .5rem;
+    }
 }

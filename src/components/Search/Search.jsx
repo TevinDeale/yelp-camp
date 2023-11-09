@@ -1,23 +1,16 @@
 import "./Search.css";
-import onay from '../../Assets/Camp Images/Compressed Images/Onay Beach.jpg';
 import Navbar from "../Static/Navbar";
 import Footer from "../Static/Footer";
+import compressedImages from "../Static/campsites";
 
-const campsites = {
-    image: onay,
-    Name: "Onay Beach",
-    Description: "This is one of the best beach camping sites, beautiful and pristine."
-}
+const Card = (props) => {
 
-
-
-const Card = () => {
     return (
         <div className="card-container">
             <div className="card-contents">
-                <img src={onay} alt='onay-beach' />
-                <h3>{campsites.Name}</h3>
-                <h4>{campsites.Description}</h4>
+                <img src={props.img} alt='onay-beach' />
+                <h3>{props.name}</h3>
+                <h4>{props.desciption}</h4>
                 <div className="button-container">
                     <button>View Campground</button>
                 </div>
@@ -26,9 +19,10 @@ const Card = () => {
     )
     }
 
+
 const Search = () => {
     return (
-    <>
+    <div className="search-page-container">
         <Navbar />
 
         <main className="search-main-container">
@@ -43,19 +37,15 @@ const Search = () => {
             </form>
         </main>
         <div className="search-container">
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
-            <Card />
+            {compressedImages.map((camp) => {
+                return (
+                <Card name={camp.name} desciption={camp.desciption} img={camp.img}/>
+                )
+            })}
         </div>
 
         <Footer />
-    </>
+    </div>
     )
 }
 
