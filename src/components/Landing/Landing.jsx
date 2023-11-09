@@ -5,6 +5,8 @@ import bookingLogo from '../../Assets/Booking.svg';
 import plumguideLogo from '../../Assets/Plum Guide.svg';
 import heroCampDesktop from '../../Assets/Hero Image.jpg'
 import './Landing.css';
+import { Link } from 'react-router-dom';
+import Search from '../Search/Search';
 
 
 const Landing = () => {
@@ -27,9 +29,11 @@ const Landing = () => {
                     <li className='actions'><h4>Leave reviews and experiences.</h4></li>
                     <li className='actions'><h4>See locations for all camps.</h4></li>
                 </ul>
-                <button className='view-campgrounds'>
-                    View Campgrounds
-                </button>
+
+                <Link to='/search-campsites'>
+                    <button className='view-campgrounds'>View Campground</button>
+                </Link>
+             
                 
                 <div className='partners'>
                 <h4>Partnered with:</h4>

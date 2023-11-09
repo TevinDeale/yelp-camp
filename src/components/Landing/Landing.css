@@ -2,6 +2,7 @@
     padding-left: 1rem;
     padding-top: 2rem;
     padding-bottom: 2rem;
+    cursor: pointer;
 }
 
 .main-container {
@@ -50,6 +51,11 @@ h4 {
     color: white;
     padding: 1.3rem;
     border-radius: 5px;
+}
+
+.view-campgrounds:active{
+    background-color: white;
+    color: black;
 }
 
 .partners {
