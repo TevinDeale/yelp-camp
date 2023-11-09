@@ -6,7 +6,6 @@ import plumguideLogo from '../../Assets/Plum Guide.svg';
 import heroCampDesktop from '../../Assets/Hero Image.jpg'
 import './Landing.css';
 import { Link } from 'react-router-dom';
-import Search from '../Search/Search';
 
 
 const Landing = () => {

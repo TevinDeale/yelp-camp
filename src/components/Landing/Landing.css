@@ -1,7 +1,10 @@
 .logo {
-    padding-left: 1rem;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding: 2rem 1rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.logo img {
     cursor: pointer;
 }
 
@@ -51,6 +54,7 @@ h4 {
     color: white;
     padding: 1.3rem;
     border-radius: 5px;
+    cursor: pointer;
 }
 
 .view-campgrounds:active{
