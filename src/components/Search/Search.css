@@ -177,3 +177,14 @@
         margin-left: .5rem;
     }
 }
+
+#no-camps {
+    font-size: 3rem;
+    color: gray;
+
+}
+
+.search-container-no-camps {
+    margin-left: 1rem;
+    margin-right: 1rem;
+}
